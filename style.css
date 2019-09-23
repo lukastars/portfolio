@@ -1,0 +1,419 @@
+/* ------the navigation bar section------*/
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: top 0.3s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.navbar-collapse{
+    height: 50px;
+}
+.bg-color {
+    transition: 250ms ease-in;
+    background-color: transparent !important;
+}
+.bg-color.scrolled {
+    color: #fff;
+    background:linear-gradient(#eeeff5 20% , transparent )  !important; 
+}
+
+    
+
+.navbar {
+    padding: 0 !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+
+
+    color: red;
+
+    float: left;
+    position: relative;
+}
+
+
+#navbarNav li::after {
+    background-color: #000;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+}
+
+#navbarNav li:hover::after {
+    width: 100%;
+}
+.navbar-nav li a {
+    color: #000 ;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars {
+    color: #000;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+#nav-bar button {
+    border: 0;
+}
+
+/*----------- banner section---------------*/
+#banner {
+    color: #fff;
+
+}
+
+.promo-title {
+    font-size: 5rem;
+    font-weight: 600;
+    
+}
+
+
+
+#banner a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom-img {
+    width: 100%;
+    height: 90px;
+}
+
+
+
+
+
+.container .row {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #000; 
+}
+
+#banner .btn-primary {
+    box-shadow: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: radial-gradient( white  5%, rgb(219, 219, 219)  95%);
+    color: #000;
+    font-family: 'Raleway', sans-serif; 
+}
+
+
+
+
+
+
+
+
+
+
+.btn0{
+    border: 1px solid #000 ;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; 
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .btn1{
+    color: #000 ; 
+  }
+  
+  .btn1:hover{
+    color: #fff;
+  }
+  
+  .btn0::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #000 ;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  
+  .btn1:hover::before{
+    height: 180%;
+  }
+  
+
+
+
+
+
+/*--------Projects Section---------*/
+
+#projects {
+    padding: 64px 0;
+}
+
+
+
+.title::before {
+    content: '';
+    background: #000000;
+    height: 2px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.title::after {
+    content: '';
+    background: #7b1798;
+    /*height: 10px;
+    width: 50px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(7px);
+}
+
+.btn00{
+    border: 1px solid #37BAA3 ;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; 
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .btn2{
+    color: #000 ; 
+  }
+  
+  .btn2:hover{
+    color: #fff;
+  }
+  
+  .btn00::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #f16d6e ;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btn2::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  
+  .btn2:hover::before{
+    height: 180%;
+  }
+  
+
+/*-------About me section-------*/
+
+#about-me {
+    background-color: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.about-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+#about-me ul li {
+    margin: 10px 0px;
+}
+#about-me ul {
+    list-style:none; 
+    padding-left:0; 
+}
+#about-me .skills-img img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px;
+    
+}
+.skills-col {
+    border-left: 2px solid #000;
+    
+    
+   
+}
+#about-me li {
+    list-style-type: none;
+}
+
+#about-me ul li {
+   
+    font-weight: 400;
+}
+#about-me h5 {
+    font-weight: 600;
+}
+
+/*-------contact section---------*/
+
+
+#contact {
+    margin: 20px 0;
+}
+
+.contact {
+    border-left: 4px solid #7b1798;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.user-details {
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+.counter-section {
+    margin: 10% auto;
+    color: #5f1782;
+}
+
+.icon-box {
+    border: 0px solid #7b1798;
+    height: 100px;
+    widows: 100px;
+    margin: 20px auto;
+
+}
+
+.counter-box p {
+    font-size: 20px;
+}
+
+.counter-box .counter {
+    font-size: 80px;
+}
+
+
+
+
+
+#social-media {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+
+
+.social-icons img {
+    width: 60px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.social-icons a:hover img {
+    transform: translateY(-10px);
+}
+
+
+.footer{
+    background-color: #101522;
+    margin: 20 0;
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*return to top arrow*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
